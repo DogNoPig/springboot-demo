@@ -1,0 +1,26 @@
+#jdbc:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/xw_taes
+#  username: root
+#  #password: root
+
+#修改端口
+server:
+  port: 8088
+#修改日志级别
+logging:
+  level:
+    com.xw.demo.springbootdemo: debug
+#    org.springframework: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xw_taes
+    username: root
+    password: root
+mybatis:
+  #通用mapper已开启驼峰命名
+#  configuration:
+#    map-underscore-to-camel-case: true
+  type-aliases-package: com.xw.demo.springbootdemo.pojo
+#  mapper-locations: mapper/*.xml
